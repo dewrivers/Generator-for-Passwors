@@ -1,159 +1,144 @@
-/* ---------------------------------------- */
-/*  BODY STYLE  */
-/* ---------------------------------------- */
-
-body{
-    margin:0 auto;
-    color:black;
-    font-family: 'Patrick Hand', cursive;
+body {
+  background: #e8e8e8;
+  margin: 0px;
+  color: black;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* ---------------------------------------- */
-/*  WRAPPER STYLE  */
-/* ---------------------------------------- */
+/* Container   */
 
-.wrapper{
-    width: 600px;
-    margin: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 40px;
-    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+.container {
+  background: #e8e8e8;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0.5em;
+  border: 1px solid #e8e8e8;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #fff;
 }
 
-/* ---------------------------------------- */
 /*  CONTENT STYLE  */
-/* ---------------------------------------- */
 
-.content{
-    margin: 15px;
-    padding-top: 30px;
-    background-color: transparent;
-    box-shadow: 5px 10px 18px whitesmoke;
-
+.content {
+  margin: 15px;
+  padding-top: 30px;
+  background-color: transparent;
+  box-shadow: 5px 10px 18px whitesmoke;
 }
 
-/* ---------------------------------------- */
-/* H1  AND H2 STYLE  */
-/* ---------------------------------------- */
+/* H1  STYLE  */
 
-h1{
-    text-align: center;
-    
+h1 {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
 }
-
-
 
 /* ---------------------------------------- */
 /* REANDONLY AREA */
 /* ---------------------------------------- */
 
-.textarea{
-    padding: 10%;
-    border: dashed 3px white;
-    margin-left: 10%;
-    padding-left: 15%;
-    padding-right: 15%;
-    width: 50%;
-    text-align: center;
-    color: #696969;
-    
+.textarea {
+  padding: 10%;
+  border: dashed 3px white;
+  margin-left: 10%;
+  padding-left: 15%;
+  padding-right: 15%;
+  width: 50%;
+  text-align: center;
+  color: #696969;
 }
 
 /* ---------------------------------------- */
 /* BUTTON STYLE */
 /* ---------------------------------------- */
 
-#btn{
-    margin: 20px;
+#btn {
+  margin: 20px;
 }
-#password{
-    padding: 33px;
-    border-radius: 6px;
-    
+#password {
+  padding: 33px;
+  border-radius: 6px;
 }
-.generate{
-    width: 80%;
-    padding: 15px 40px;
-    background-color: transparent;
-    color:purple;
-    margin-left: 10%;
-    margin-bottom: 5%;
-    font-size: 20px;
-    text-align: center;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all .3s ease;
-    
-
+.generate {
+  width: 80%;
+  padding: 15px 40px;
+  background-color: transparent;
+  color: purple;
+  margin-left: 10%;
+  margin-bottom: 5%;
+  font-size: 20px;
+  text-align: center;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-/* ------------------------------------------ */ 
-/* ROW: ALERT */ 
+/* ------------------------------------------ */
+/* ROW: ALERT */
 /* ------------------------------------------ */
 
-
 .alert-copied {
-    text-align: center;
-    color: rgb(255,255,255,);
-    transition: all .2s ease;
-    cursor: pointer;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  transition: all 0.2s ease;
+  cursor: pointer;
 }
 
 .row.alert .alert-copied.active {
-    color: rgb(255,255,255,.1);
+  color: white;
 }
 
 .row.alert .alert-copied p {
-    font-size: 12px;
+  font-size: 12px;
 }
 /* ---------------------------------------- */
 /* MEDIA QUERIES */
 /* ---------------------------------------- */
 
 @media screen and (max-width: 980px) {
-    /* RESIZED CONTENT TO FIT 980PX  */
-    
-    body {
-        max-width: 980px;
-    }   
-    .wrapper {
-        width: 100%;
-        }
-}
+  /* RESIZED CONTENT TO FIT 980PX  */
 
+  body {
+    max-width: 980px;
+  }
+  .wrapper {
+    width: 100%;
+  }
+}
 
 @media screen and (max-width: 786px) {
-    /* RESIZED CONTENT TO FIT 786px  */
-    body {
-        max-width: 786px;
-    } 
-    .wrapper {
-        width: 100%;
-        }
-    .generate {
-        margin-left: 10%;
-        margin-bottom: 10px;
-        }
+  /* RESIZED CONTENT TO FIT 786px  */
+  body {
+    max-width: 786px;
+  }
+  .wrapper {
+    width: 100%;
+  }
+  .generate {
+    margin-left: 10%;
+    margin-bottom: 10px;
+  }
 }
 
-
 @media screen and (max-width: 640px) {
-    /* RESIZE CONTENT TO FIT 640px  */
-    body {
-       max-width: 640px;
-   } 
-    .wrapper {
-       width: 100%;
-       }
-    .btn {
-        margin-top: 20px;
-       }
-    .generate {
-        margin-left: 22%;
-           
-       }
-   
-   }
-
+  /* RESIZE CONTENT TO FIT 640px  */
+  body {
+    max-width: 640px;
+  }
+  .wrapper {
+    width: 100%;
+  }
+  .btn {
+    margin-top: 20px;
+  }
+  .generate {
+    margin-left: 22%;
+  }
+}
